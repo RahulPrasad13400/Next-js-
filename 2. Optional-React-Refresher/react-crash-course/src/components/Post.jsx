@@ -1,10 +1,8 @@
-import React from 'react'
-
-export default function Post() {
+export default function Post({item}) {
   return (
-    <div>
-      <p>peter</p>
-      <p>ambitious</p>
-    </div>
-  )
+    <li className="post">
+      <p>{item.author}</p>
+      <p>{item.text}</p>
+    </li>   
+  ) 
 }
