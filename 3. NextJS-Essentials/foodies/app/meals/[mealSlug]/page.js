@@ -1,3 +1,6 @@
 export default function MealDetailsPage(){
-    return <h1>Meal Details</h1>
+    return <>
+        <header></header>
+        <main></main>
+    </>
 }
