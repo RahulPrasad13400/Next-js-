@@ -9,11 +9,11 @@ export default function MealItem({ title, slug, image, summary, creator }) {
     <article className={classes.meal}>
       <header>
         <div className={classes.image}>
-          <Image
-            src={`/images/${image}`}
-            alt={title}
-            fill
-          />
+        <Image
+          src={`/images/${image.startsWith("/images") ? image.split('/').pop() : image}`}
+          alt={title}
+          fill     
+        />
         </div>
         <div className={classes.headerText}>
           <h2>{title}</h2>
